@@ -27,8 +27,10 @@ export default function Home({essays}: Essays) {
         <meta name="description" content="Ray Elder" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-        <h1 className={inter.className} style={{margin: "0", padding: "0 0 0 .125rem", fontSize:"1.125rem", fontWeight: "500"}}>Ray Elder</h1>
-        <ul className={inter.className} >
+      <h2 className={inter.className}>
+        <Link href="/">Ray Elder</Link>
+      </h2>
+      <ul className={inter.className} >
           {
           essays.map((essay,index) => (
             <li key={index}>
